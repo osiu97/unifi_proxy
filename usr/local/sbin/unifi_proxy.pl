@@ -96,7 +96,7 @@ use constant {
      ST_REST => 2,
 };
 
-IO::Socket::SSL::set_default_context(new IO::Socket::SSL::SSL_Context(SSL_version => 'TLSv12', SSL_verify_mode => 0));
+IO::Socket::SSL::set_default_context(new IO::Socket::SSL::SSL_Context(SSL_version => 'TLSv1', SSL_verify_mode => 0));
 
 sub addToLLD;
 sub fetchData;
